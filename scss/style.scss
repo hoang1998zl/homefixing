@@ -1,0 +1,80 @@
+// color
+$color_orange: #eda018;
+$color_primary: #313131;
+$color_gray: #99b0bc;
+$color_white: #fff;
+$shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+$header_height: 75px;
+$default_height: 55px;
+$default_paddingX: 4rem;
+$sidebar_width: 75px;
+$title_height: 75px;
+
+@font-face {
+    src: url('../font/SVN-Avo.ttf');
+    font-family: SVN Avo;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SVN Avo;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    border: 15px solid $color_orange;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+button,
+button:is(:hover, :focus) {
+    outline: none;
+    box-shadow: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+input,
+input:hover,
+input:focus {
+    outline: none;
+
+    &::placeholder {
+        color: $color_gray;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+textarea {
+    resize: none;
+
+    &::placeholder {
+        color: $color_gray;
+    }
+}
+
+.color_orange {
+    color: $color_orange;
+}
+
+@import '_header.scss';
+@import '_banner.scss';
+@import '_main.scss';
