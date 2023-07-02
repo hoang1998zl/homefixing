@@ -1,5 +1,7 @@
 .banner {
     width: 100%;
+    border: 10px solid $color_orange;
+    border-top: none;
 
     .carousel {
         .carousel-indicators {

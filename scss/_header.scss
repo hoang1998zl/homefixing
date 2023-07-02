@@ -6,6 +6,9 @@ header {
     left: 0;
     right: 0;
     z-index: 999;
+    border-top: 10px solid $color_orange;
+    border-left: 10px solid $color_orange;
+    border-right: 10px solid $color_orange;
     padding: 0 $default_paddingX;
 
     .navbar {

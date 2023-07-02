@@ -15,7 +15,6 @@ html {
 
 body {
   font-size: 1.4rem;
-  border: 15px solid #eda018;
 }
 
 a,
@@ -77,6 +76,9 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
+  border-top: 10px solid #eda018;
+  border-left: 10px solid #eda018;
+  border-right: 10px solid #eda018;
   padding: 0 4rem;
 }
 header .navbar {
@@ -119,6 +121,8 @@ header .navbar form .ungDung-button:hover {
 
 .banner {
   width: 100%;
+  border: 10px solid #eda018;
+  border-top: none;
 }
 .banner .carousel .carousel-indicators {
   position: relative;
