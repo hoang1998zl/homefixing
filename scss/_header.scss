@@ -2,16 +2,18 @@ header {
     height: $header_height;
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
     z-index: 999;
-    border-top: 10px solid $color_orange;
-    border-left: 10px solid $color_orange;
-    border-right: 10px solid $color_orange;
+    border-left: 2rem solid transparent;
+    border-right: 2rem solid transparent;
     padding: 0 $default_paddingX;
-
+    display: flex;
+    align-items: center;
+    
     .navbar {
+        width: 100%;
         height: 100%;
 
         .navbar-brand {

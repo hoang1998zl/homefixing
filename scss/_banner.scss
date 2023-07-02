@@ -1,7 +1,6 @@
 .banner {
     width: 100%;
-    border: 10px solid $color_orange;
-    border-top: none;
+    border: 2rem solid $color_orange;
 
     .carousel {
         .carousel-indicators {
@@ -25,7 +24,7 @@
         .carousel-inner {
             img {
                 width: 100%;
-                height: 100vh;
+                height: calc(100vh - 4rem);
                 object-fit: cover;
             }
 

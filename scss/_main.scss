@@ -1,0 +1,46 @@
+main {
+    width: 100%;
+
+    .title {
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: capitalize;
+
+        strong {
+            color: $color_orange;
+        }
+
+        .dots-wrapper {
+            i {
+                font-size: 2rem;
+                color: $color_orange;
+
+                &:nth-child(2) {
+                    color: $color_primary;
+                }
+            }
+        }
+    }
+
+    .content {
+        font-size: 2rem;
+    }
+
+    .index-aboutUs {
+        width: 100%;
+        padding: 2rem 4rem;
+        border-left: 2rem solid $color_orange;
+        border-right: 2rem solid $color_orange;
+        display: grid;
+        grid-template-columns: 60% 30%;
+        justify-content: space-between;
+
+        .img-wrapper {
+            position: relative;
+
+            img {
+                transform: translateY(-12rem);
+            }
+        }
+    }
+}
