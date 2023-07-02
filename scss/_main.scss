@@ -163,13 +163,69 @@ main {
 
         .xemThem-btn {
             width: max-content;
-            margin-top: 2rem;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
             padding: 0.5rem 2rem;
             border-radius: 5rem;
             color: $color_white;
             background-color: $color_orange;
             grid-column: 1 / -1;
             font-size: 2rem;
+        }
+    }
+
+    .mobileApp {
+        .mobileApp-wrapper {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 40vw);
+            justify-content: space-between;
+            grid-gap: 5%;
+
+            .mobileApp-item {
+                margin-top: -25%;
+                position: relative;
+
+                img {
+                    display: block;
+                    width: 75%;
+                }
+
+
+                .mobileApp-item-content {
+                    position: absolute;
+                    bottom: 0;
+                    right: -20%;
+
+                    p {
+                        font-size: 2rem;
+                        border-left: 10px solid $color_orange;
+                        padding-left: 2rem;
+                        text-align: center;
+                    }
+
+                    a {
+                        display: inline-flex;
+                        text-align: center;
+                        padding: 0.5rem 2rem;
+                        border-radius: 5rem;
+                        color: $color_white;
+                        background-color: $color_orange;
+                        margin: 1rem;
+                    }
+                }
+
+                &:last-child {
+                    img {
+                        margin-left: auto;
+                    }
+
+                    .mobileApp-item-content {
+                        right: unset;
+                        left: 0;
+                    }
+                }
+            }
         }
     }
 }
