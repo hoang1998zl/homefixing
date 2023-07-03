@@ -1,0 +1,37 @@
+#footer {
+    background-color: #343434;
+    color: $color_white;
+    padding: 2rem $default_paddingX;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    ul {
+        li {
+            color: $color_white;
+            display: flex;
+            align-items: center;
+
+            a {
+                display: flex;
+                align-items: center;
+            }
+
+            i {
+                width: 2rem;
+                color: $color_orange;
+            }
+
+            span {
+                color: $color_white;
+            }
+        }
+    }
+
+    .footer_outlink{
+        display: flex;
+        align-items: center;
+    }
+}

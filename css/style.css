@@ -121,6 +121,37 @@ header .navbar form .ungDung-button:hover {
   border-color: #eda018;
 }
 
+#footer {
+  background-color: #343434;
+  color: #fff;
+  padding: 2rem 4rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+#footer ul li {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+#footer ul li a {
+  display: flex;
+  align-items: center;
+}
+#footer ul li i {
+  width: 2rem;
+  color: #eda018;
+}
+#footer ul li span {
+  color: #fff;
+}
+#footer .footer_outlink {
+  display: flex;
+  align-items: center;
+}
+
 .banner {
   width: 100%;
   border: 2rem solid #eda018;
@@ -366,5 +397,5 @@ main .mobileApp .mobileApp-wrapper .mobileApp-item:last-child img {
 }
 main .mobileApp .mobileApp-wrapper .mobileApp-item:last-child .mobileApp-item-content {
   right: unset;
-  left: 0;
+  left: -20%;
 }
