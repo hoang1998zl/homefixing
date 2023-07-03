@@ -37,7 +37,7 @@ main {
         border-left: 2rem solid $color_orange;
         border-right: 2rem solid $color_orange;
         display: grid;
-        grid-template-columns: 60% 25%;
+        grid-template-columns: 60% 30%;
         justify-content: space-between;
 
         .img-wrapper {
@@ -59,8 +59,9 @@ main {
         .whyChooseUs-wrapper {
             padding: 0 0 0 4rem;
             display: grid;
-            grid-template-columns: 25% 60%;
+            grid-template-columns: 30% 60%;
             justify-content: space-between;
+            align-items: center;
 
             .whyChooseUs-content {
                 position: relative;
@@ -201,7 +202,6 @@ main {
                         font-size: 2rem;
                         border-left: 10px solid $color_orange;
                         padding-left: 2rem;
-                        text-align: center;
                     }
 
                     a {

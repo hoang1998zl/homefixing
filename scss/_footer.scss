@@ -13,6 +13,7 @@
             color: $color_white;
             display: flex;
             align-items: center;
+            margin-bottom: 0.5rem;
 
             a {
                 display: flex;
@@ -30,8 +31,14 @@
         }
     }
 
-    .footer_outlink{
+    .footer_outlink {
         display: flex;
         align-items: center;
+        gap: 2rem;
+
+        a {
+            font-size: 2.4rem;
+            color: $color_orange;
+        }
     }
 }
