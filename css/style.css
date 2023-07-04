@@ -69,6 +69,32 @@ textarea::placeholder {
   color: #eda018;
 }
 
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.title strong {
+  color: #eda018;
+}
+.title .dots-wrapper {
+  margin: 1rem 0 3rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.title .dots-wrapper i {
+  font-size: 2rem;
+  color: #eda018;
+}
+.title .dots-wrapper i:nth-child(2) {
+  color: #313131;
+}
+
+.content {
+  font-size: 2rem;
+}
+
 header {
   height: 75px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -118,6 +144,104 @@ header .navbar form .ungDung-button:hover {
   background-color: #eda018;
   color: #fff;
   border-color: #eda018;
+}
+
+.menu {
+  height: 75px;
+  padding: 0 4rem;
+  background-color: #000;
+  border-left: 2rem solid #eda018;
+  border-right: 2rem solid #eda018;
+}
+.menu .navbar {
+  height: 100%;
+  align-items: center;
+  font-size: 2rem;
+}
+.menu .navbar .danhMuc-button .dropdown-toggle {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .navbar .danhMuc-button .dropdown-toggle::after {
+  display: none;
+}
+.menu .navbar .danhMuc-button .dropdown-toggle i {
+  color: #eda018;
+  font-size: 4rem;
+}
+.menu .navbar .danhMuc-button .dropdown-toggle strong {
+  margin-left: 1rem;
+}
+.menu .navbar form {
+  width: 20vw;
+  height: 45px;
+  border: 1px solid #eda018;
+  border-radius: 1rem;
+}
+.menu .navbar form button[type=submit] {
+  background-color: transparent;
+  border: none;
+  color: #eda018;
+  padding: 0 1rem;
+  border-radius: 1rem;
+}
+.menu .navbar form button[type=submit] i {
+  transform: rotateY(180deg);
+  font-size: 2.4rem;
+}
+.menu .navbar form input {
+  background-color: transparent;
+  border: none;
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+.menu .navbar form input::-moz-placeholder {
+  font-style: italic;
+  color: #fff;
+}
+.menu .navbar form input::placeholder {
+  font-style: italic;
+  color: #fff;
+}
+.menu .navbar .navbar-nav {
+  flex-direction: row;
+  gap: 3rem;
+}
+.menu .navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.menu .navbar .navbar-nav .nav-item .nav-link i {
+  color: #eda018;
+  margin-right: 0.5rem;
+}
+.menu .navbar .navbar-nav .nav-item .nav-link i.fa-cart-shopping {
+  font-size: 4rem;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-toggle {
+  position: relative;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-toggle::after {
+  display: none;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu {
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  font-size: 2rem;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu img.language {
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.dropdown-menu-start {
+  right: 0;
+  left: unset;
 }
 
 #footer {
@@ -214,30 +338,6 @@ header .navbar form .ungDung-button:hover {
 
 main {
   width: 100%;
-}
-main .title {
-  font-size: 4rem;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-main .title strong {
-  color: #eda018;
-}
-main .title .dots-wrapper {
-  margin: 1rem 0 3rem 0;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-main .title .dots-wrapper i {
-  font-size: 2rem;
-  color: #eda018;
-}
-main .title .dots-wrapper i:nth-child(2) {
-  color: #313131;
-}
-main .content {
-  font-size: 2rem;
 }
 main .index-aboutUs {
   width: 100%;
@@ -398,4 +498,119 @@ main .mobileApp .mobileApp-content a {
   background-color: #eda018;
   color: #fff;
   border-radius: 5rem;
+}
+main .dichVu {
+  padding: 2rem 4rem;
+  border-left: 2rem solid #eda018;
+  border-right: 2rem solid #eda018;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+main .dichVu img {
+  margin-top: -12rem;
+  width: 30%;
+}
+main .dichVu .content {
+  flex: 1;
+}
+main .dichVu-1 {
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+main .dichVu-1 img {
+  margin-top: -12rem;
+  width: 30%;
+}
+main .dichVu-1 .content {
+  flex: 1;
+}
+main .dichVu-1 .content .list_content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+}
+main .dichVu-1 .content .list_content .list_content-item {
+  display: flex;
+  align-items: center;
+}
+main .dichVu-1 .content .list_content .list_content-item i {
+  font-size: 4rem;
+  flex-basis: 2rem;
+}
+main .dichVu-1 .content .list_content .list_content-item i.color_orange {
+  margin-right: 2rem;
+}
+main .dichVu-1 .content .list_content .list_content-item span {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-style: italic;
+}
+main .dichVu-2 {
+  padding: 2rem 4rem;
+  border-left: 2rem solid #eda018;
+  border-right: 2rem solid #eda018;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+main .dichVu-2 img {
+  margin-top: -12rem;
+  width: 30%;
+}
+main .dichVu-2 .content {
+  flex: 1;
+}
+main .dichVu-2 .content .list_content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+}
+main .dichVu-2 .content .list_content .list_content-item {
+  display: flex;
+  align-items: center;
+}
+main .dichVu-2 .content .list_content .list_content-item i {
+  font-size: 4rem;
+  flex-basis: 2rem;
+}
+main .dichVu-2 .content .list_content .list_content-item i.color_orange {
+  margin-right: 2rem;
+}
+main .dichVu-2 .content .list_content .list_content-item span {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-style: italic;
+}
+main .service-grid {
+  width: 100%;
+  padding: 4rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 5vw;
+  grid-column-gap: 10vw;
+}
+main .service-grid .service-item {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+main .service-grid .service-item h4 {
+  font-size: 2.4rem;
+  margin: 1rem 0 2rem 0;
+  font-weight: bold;
+  border-left: 10px solid #eda018;
+  padding: 0 2rem;
+}
+main .service-grid .service-item button {
+  background-color: #eda018;
+  border-radius: 5rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  border: none;
 }

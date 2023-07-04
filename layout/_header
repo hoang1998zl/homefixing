@@ -14,7 +14,10 @@
                     <a class="nav-link" href="index.html">Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="dich-vu.html">gói dịch vụ</a>
+                    <a class="nav-link" href="dich-vu.html">dịch vụ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="goi-dich-vu.html">gói dịch vụ</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="tin-tuc.html">tin tức</a>

@@ -1,36 +1,6 @@
 main {
     width: 100%;
 
-    .title {
-        font-size: 4rem;
-        font-weight: bold;
-        text-transform: capitalize;
-
-        strong {
-            color: $color_orange;
-        }
-
-        .dots-wrapper {
-            margin: 1rem 0 3rem 0;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-
-            i {
-                font-size: 2rem;
-                color: $color_orange;
-
-                &:nth-child(2) {
-                    color: $color_primary;
-                }
-            }
-        }
-    }
-
-    .content {
-        font-size: 2rem;
-    }
-
     .index-aboutUs {
         width: 100%;
         padding: 2rem $default_paddingX 0 $default_paddingX;
@@ -220,6 +190,143 @@ main {
                 background-color: $color_orange;
                 color: $color_white;
                 border-radius: 5rem;
+            }
+        }
+    }
+
+    .dichVu {
+        padding: 2rem $default_paddingX;
+        border-left: $default_border solid $color_orange;
+        border-right: $default_border solid $color_orange;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        img {
+            margin-top: -12rem;
+            width: 30%;
+        }
+
+        .content {
+            flex: 1;
+        }
+    }
+
+    .dichVu-1 {
+        padding: 2rem calc($default_paddingX + $default_border);
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+
+        img {
+            margin-top: -12rem;
+            width: 30%;
+        }
+
+        .content {
+            flex: 1;
+
+            .list_content {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: stretch;
+
+                .list_content-item {
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        font-size: 4rem;
+                        flex-basis: 2rem;
+
+                        &.color_orange {
+                            margin-right: 2rem;
+                        }
+                    }
+
+                    span {
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+
+    .dichVu-2 {
+        padding: 2rem $default_paddingX;
+        border-left: $default_border solid $color_orange;
+        border-right: $default_border solid $color_orange;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        img {
+            margin-top: -12rem;
+            width: 30%;
+        }
+
+        .content {
+            flex: 1;
+
+            .list_content {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: stretch;
+
+                .list_content-item {
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        font-size: 4rem;
+                        flex-basis: 2rem;
+
+                        &.color_orange {
+                            margin-right: 2rem;
+                        }
+                    }
+
+                    span {
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+
+    .service-grid {
+        width: 100%;
+        padding: $default_paddingX calc($default_paddingX + $default_border);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 5vw;
+        grid-column-gap: 10vw;
+
+        .service-item {
+            text-transform: capitalize;
+            font-size: 2rem;
+
+            h4 {
+                font-size: 2.4rem;
+                margin: 1rem 0 2rem 0;
+                font-weight: bold;
+                border-left: 10px solid $color_orange;
+                padding: 0 2rem;
+            }
+            button{
+                background-color: $color_orange;
+                border-radius: 5rem;
+                font-weight: bold;
+                padding: 0.5rem 2rem;
+                border: none;
             }
         }
     }
