@@ -66,47 +66,28 @@
         </nav>
     </header>
     <main>
-        <section class="banner"></section>
-        <section class="second-menu">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa-solid fa-bars"></i>
-                            <span>
-                                Danh mục
-                            </span>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="triggerId">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item disabled" href="#">Disabled action</a>
-                            <h6 class="dropdown-header">Section header</h6>
-                            <a class="dropdown-item" href="#">Action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">After divider action</a>
+        <section class="banner">
+            <img src="./img/IMAGE 7.png" alt="">
+        </section>
+
+        <section class="dichVu">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="./img/IMAGE 8.png" alt="">
+                    </div>
+                    <div class="col-8">
+
+                        <div class="title">
+                            <div class="dots-wrapper">
+                                <i class="fa-solid fa-circle"></i>
+                                <i class="fa-solid fa-circle"></i>
+                                <i class="fa-solid fa-circle"></i>
+                            </div>
                         </div>
                     </div>
-                    <form class="d-flex my-2 my-lg-0 mx-auto">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        <input class="form-control me-sm-2" type="text" placeholder="Search">
-                    </form>
-                    <ul class="navbar-nav mt-2 mt-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                    </ul>
                 </div>
-            </nav>
-
+            </div>
         </section>
     </main>
     <footer id="footer"></footer>
@@ -132,8 +113,8 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
+            $("#header").load("./layout/_header");
             $("#footer").load("./layout/_footer");
-            $(".banner").load("./layout/_banner");
         });
     </script>
 
