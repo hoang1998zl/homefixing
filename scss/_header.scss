@@ -241,6 +241,10 @@ header {
                     &.shoppingCart-menu {
                         width: max-content;
 
+                        a {
+                            color: $color_primary;
+                        }
+
                         .dropdown-items {
                             padding: 0.5rem 1rem;
                             display: grid;

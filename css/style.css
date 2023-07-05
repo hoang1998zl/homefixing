@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.fs-18 {
+  font-size: 1.8rem;
+}
+
 @font-face {
   src: url("../font/SVN-Avo.ttf");
   font-family: SVN Avo;
@@ -295,6 +299,9 @@ header .navbar form .ungDung-button:hover {
 .menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu {
   width: -moz-max-content;
   width: max-content;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu a {
+  color: #313131;
 }
 .menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .dropdown-items {
   padding: 0.5rem 1rem;
@@ -683,4 +690,129 @@ main .service-grid .service-item button {
   font-weight: bold;
   padding: 0.5rem 2rem;
   border: none;
+}
+main .list_choose_service .service-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3rem auto;
+  grid-gap: 1rem;
+}
+main .list_choose_service .service-wrapper .checkbox {
+  cursor: pointer;
+}
+main .list_choose_service .service-wrapper .checkbox .check-input {
+  display: none;
+}
+main .list_choose_service .service-wrapper .checkbox .check-label {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid #eda018;
+  border-radius: 0.5rem;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+main .list_choose_service .service-wrapper .checkbox .check-label img {
+  display: none;
+  cursor: pointer;
+}
+main .list_choose_service .service-wrapper .checkbox .check-input:checked ~ .check-label img {
+  display: block;
+}
+main .list_choose_service .service-wrapper .service-item {
+  text-transform: capitalize;
+  font-size: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main .list_choose_service .service-wrapper .service-item h4 {
+  font-size: 2rem;
+  margin: 1rem 0 2rem 0;
+  font-weight: bold;
+  border-left: 10px solid #eda018;
+  padding: 0 2rem;
+}
+main .list_choose_service .service-wrapper .service-item button {
+  background-color: #eda018;
+  border-radius: 5rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  border: none;
+  font-size: 1.6rem;
+}
+main .form-datLich {
+  padding: 2rem 6rem;
+}
+main .form-datLich .form {
+  padding: 1rem;
+  border: 1px solid #eda018;
+  border-radius: 1rem;
+}
+main .form-datLich .form .form-title {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+}
+main .form-datLich .form .form-title img {
+  height: 3rem;
+}
+main .form-datLich .form .form-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 35% auto;
+  grid-gap: 2rem;
+  margin-bottom: 1rem;
+}
+main .form-datLich .form .form-row label {
+  font-size: 1.8rem;
+}
+main .form-datLich .form .form-row input {
+  width: 100%;
+  border: 1px solid #eda018;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+}
+main .form-datLich .form .form-row input::-moz-placeholder {
+  font-style: italic;
+}
+main .form-datLich .form .form-row input::placeholder {
+  font-style: italic;
+}
+main .form-datLich .form .icon-datLich {
+  position: relative;
+  text-align: center;
+}
+main .form-datLich .form .icon-datLich label {
+  z-index: 1;
+  position: relative;
+}
+main .form-datLich .form .icon-datLich label img {
+  width: 7rem;
+  height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .form-datLich .form .icon-datLich input {
+  width: 7rem;
+  height: 7rem;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  border: none;
+  background-color: transparent;
+}
+main .form-datLich .form .button {
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: bold;
+  border: none;
+  background-color: #eda018;
+  border-radius: 5rem;
+  padding: 0.5rem 2rem;
+  margin: 1rem;
 }

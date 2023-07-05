@@ -27,6 +27,9 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="./css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-datepicker.standalone.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -37,6 +40,121 @@
         <!-- banner -->
         <section class="banner"></section>
         <section class="menu"></section>
+        <section class="list_choose_service mt-5">
+            <div class="container">
+                <div class="row clearfix justify-content-center gy-5">
+                    <div class="col-12 col-lg-3">
+                        <div class="service-wrapper">
+                            <div class="checkbox">
+                                <input class="check-input" type="checkbox" id="checkbox_1" checked="true">
+                                <label class="check-label" for="checkbox_1">
+                                    <img src="./img/CHỌN NGÔN NGỮ ICON.png" alt="">
+                                </label>
+                            </div>
+                            <div class="service-item">
+                                <img src="./img/IMAGE SỬA SÀN.png" alt="">
+                                <h4>dịch vụ sửa chữa sàn</h4>
+                                <button type="button">
+                                    500.000đ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="service-wrapper">
+                            <div class="checkbox">
+                                <input class="check-input" type="checkbox" id="checkbox_2" checked="true">
+                                <label class="check-label" for="checkbox_2">
+                                    <img src="./img/CHỌN NGÔN NGỮ ICON.png" alt="">
+                                </label>
+                            </div>
+                            <div class="service-item">
+                                <img src="./img/IMAGE SỬA SÀN.png" alt="">
+                                <h4>dịch vụ sửa chữa sàn</h4>
+                                <button type="button">
+                                    500.000đ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="service-wrapper justify-content-center">
+                            <div class="checkbox">
+                                <input class="check-input" type="checkbox" id="checkbox_3" checked="true">
+                                <label class="check-label" for="checkbox_1,checkbox_2">
+                                    <img src="./img/CHỌN NGÔN NGỮ ICON.png" alt="">
+                                </label>
+                            </div>
+                            <h1>
+                                Tổng thanh toán
+                                <strong class="color_orange">
+                                    1.000.000đ
+                                </strong>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form-datLich">
+            <form class="container-fluid form">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="form-title">
+                            <img src="./img/ICON KHÁCH.png" alt="">
+                            <strong class="text-capitalize">
+                                Thông tin khách hàng
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-8 mt-lg-4">
+                        <div class="form-row">
+                            <label class="fw-bold text-capitalize text-end" for="">
+                                Họ và tên <strong class="color_orange">*</strong>:
+                            </label>
+                            <input type="text" placeholder="">
+                        </div>
+                        <div class="form-row">
+                            <label class="fw-bold text-capitalize text-end" for="">
+                                Số điện thoại <strong class="color_orange">*</strong>:
+                            </label>
+                            <input type="text" placeholder="">
+                        </div>
+                        <div class="form-row">
+                            <label class="fw-bold text-capitalize text-end" for="">
+                                Địa chỉ <strong class="color_orange">*</strong>:
+                            </label>
+                            <input type="address" placeholder="">
+                        </div>
+                        <div class="form-row">
+                            <label class="fw-bold text-capitalize text-end" for="">
+                                Ghi chú <strong class="color_orange">*</strong>:
+                            </label>
+                            <input type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mt-lg-4">
+                        <p class="text-center fw-bold text-capitalize text-end fs-18">
+                            Đặt lịch <strong class="color_orange">*</strong>:
+                        </p>
+                        <p class="icon-datLich">
+                            <label id="label-inputDate" for="inputDate" onclick="showCalendar()">
+                                <img src="./img/ICON LỊCH.png" alt="">
+                            </label>
+                            <input id="inputDate" type="text">
+                        </p>
+                        <div class="w-100 d-flex justify-content-center align-items-center">
+                            <button type="button" class="button">
+                                Xác nhận
+                            </button>
+                            <button type="button" class="button">
+                                Hủy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
         <section class="mobileApp"></section>
     </main>
     <footer id="footer"></footer>
@@ -45,6 +163,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/bootstrap-datepicker.min.js"></script>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -68,6 +189,10 @@
             $(".menu").load("./layout/_menu");
             $(".mobileApp").load("./layout/_mobileApp");
         });
+    </script>
+
+    <script>
+        $('.icon-datLich input').datepicker({});
     </script>
 
 </body>

@@ -105,7 +105,9 @@
                         <img src="./img/BACK ICON.png" alt="">
                     </button>
                     <div class="content">
-                        <strong>Đặt dịch vụ</strong>
+                        <a href="./xac-nhan-dich-vu.html">
+                            <strong>Đặt dịch vụ</strong>
+                        </a>
                     </div>
                 </div>
             </div>

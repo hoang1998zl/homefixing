@@ -285,4 +285,148 @@ main {
             }
         }
     }
+
+    .list_choose_service {
+        .service-wrapper {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 3rem auto;
+            grid-gap: 1rem;
+
+            .checkbox {
+                cursor: pointer;
+
+                .check-input {
+                    display: none;
+                }
+
+                .check-label {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    border: 1px solid $color_orange;
+                    border-radius: 0.5rem;
+                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    img {
+                        display: none;
+                        cursor: pointer;
+                    }
+                }
+
+                .check-input:checked~.check-label {
+                    img {
+                        display: block;
+                    }
+                }
+            }
+
+            .service-item {
+                text-transform: capitalize;
+                font-size: 2rem;
+                user-select: none;
+
+                h4 {
+                    font-size: 2rem;
+                    margin: 1rem 0 2rem 0;
+                    font-weight: bold;
+                    border-left: 10px solid $color_orange;
+                    padding: 0 2rem;
+                }
+
+                button {
+                    background-color: $color_orange;
+                    border-radius: 5rem;
+                    font-weight: bold;
+                    padding: 0.5rem 2rem;
+                    border: none;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .form-datLich {
+        padding: 2rem calc($default_paddingX + $default_border);
+
+        .form {
+            padding: 1rem;
+            border: 1px solid $color_orange;
+            border-radius: 1rem;
+
+            .form-title {
+                font-size: 2.4rem;
+                margin-bottom: 0;
+
+                img {
+                    height: 3rem;
+                }
+            }
+
+            .form-row {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 35% auto;
+                grid-gap: 2rem;
+                margin-bottom: 1rem;
+
+                label {
+                    font-size: 1.8rem;
+                }
+
+                input {
+                    width: 100%;
+                    border: 1px solid $color_orange;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem 1.2rem;
+
+                    &::placeholder {
+                        font-style: italic;
+                    }
+                }
+            }
+
+            .icon-datLich {
+                position: relative;
+                text-align: center;
+
+                label {
+                    z-index: 1;
+                    position: relative;
+
+                    img {
+                        width: 7rem;
+                        height: 7rem;
+                        object-fit: cover;
+                    }
+                }
+
+                input {
+                    width: 7rem;
+                    height: 7rem;
+                    z-index: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 0;
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+
+            .button {
+                width: max-content;
+                font-weight: bold;
+                border: none;
+                background-color: $color_orange;
+                border-radius: 5rem;
+                padding: 0.5rem 2rem;
+                margin: 1rem;
+            }
+        }
+    }
 }
