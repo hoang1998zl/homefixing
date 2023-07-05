@@ -176,6 +176,42 @@ header .navbar form .ungDung-button:hover {
 .menu .navbar .danhMuc-button .dropdown-toggle strong {
   margin-left: 1rem;
 }
+.menu .navbar .danhMuc-button .dropdown-menu {
+  background-color: #e9e1df;
+  border-radius: 1rem;
+  padding: 1rem 0;
+}
+.menu .navbar .danhMuc-button .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 1rem;
+  border: solid transparent;
+  border-width: 0 8px 10px 8px;
+  border-color: transparent transparent #e9e1df transparent;
+}
+.menu .navbar .danhMuc-button .dropdown-menu a {
+  width: 100%;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #313131;
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+.menu .navbar .danhMuc-button .dropdown-menu a img {
+  height: 2.4rem;
+  margin-right: 0.5rem;
+}
+.menu .navbar .danhMuc-button .dropdown-menu a span {
+  flex: 1;
+}
+.menu .navbar .danhMuc-button .dropdown-menu a:hover {
+  background-color: #99b0bc;
+}
 .menu .navbar form {
   width: 20vw;
   height: 45px;
@@ -198,6 +234,7 @@ header .navbar form .ungDung-button:hover {
   border: none;
   border-radius: 1rem;
   padding: 0 1rem;
+  color: #fff;
 }
 .menu .navbar form input::-moz-placeholder {
   font-style: italic;
@@ -223,9 +260,6 @@ header .navbar form .ungDung-button:hover {
 .menu .navbar .navbar-nav .nav-item .nav-link i.fa-cart-shopping {
   font-size: 4rem;
 }
-.menu .navbar .navbar-nav .dropdown .dropdown-toggle {
-  position: relative;
-}
 .menu .navbar .navbar-nav .dropdown .dropdown-toggle::after {
   display: none;
 }
@@ -234,14 +268,48 @@ header .navbar form .ungDung-button:hover {
   width: max-content;
   position: absolute;
   font-size: 2rem;
+  background-color: #e9e1df;
+  border-radius: 1rem;
+  padding: 1rem 0;
 }
-.menu .navbar .navbar-nav .dropdown .dropdown-menu img.language {
-  height: 2rem;
-  margin-right: 0.5rem;
+.menu .navbar .navbar-nav .dropdown .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 1rem;
+  border: solid transparent;
+  border-width: 0 8px 10px 8px;
+  border-color: transparent transparent #e9e1df transparent;
 }
 .menu .navbar .navbar-nav .dropdown .dropdown-menu.dropdown-menu-start {
   right: 0;
   left: unset;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.ngonNgu-menu img {
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.ngonNgu-menu .dropdown-item:hover {
+  background-color: #99b0bc;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu {
+  width: -moz-max-content;
+  width: max-content;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .dropdown-item {
+  display: grid;
+  grid-template-columns: 3rem 2rem auto;
+  grid-gap: 1rem;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .dropdown-item .checkbox .check-input {
+  display: none;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .dropdown-item .checkbox .check-label {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid #eda018;
+  border-radius: 0.5rem;
+  display: block;
 }
 
 #footer {

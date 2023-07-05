@@ -1,19 +1,36 @@
 <nav class="navbar">
     <div class="dropdown danhMuc-button">
         <button class="dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
+            aria-expanded="false" data-bs-auto-close="outside">
             <i class="fa-solid fa-bars"></i>
             <strong>
                 Danh mục
             </strong>
         </button>
         <div class="dropdown-menu" aria-labelledby="triggerId">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item disabled" href="#">Disabled action</a>
-            <h6 class="dropdown-header">Section header</h6>
-            <a class="dropdown-item" href="#">Action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">After divider action</a>
+            <a>
+                <img src="./img/BÚA ICON.png" alt="">
+                <span>Sửa chữa bếp</span>
+            </a>
+            <a>
+                <img src="./img/BÚA ICON.png" alt="">
+                <span>Sửa chữa cửa sổ</span>
+            </a>
+            <a>
+                <img src="./img/BÚA ICON.png" alt="">
+                <span>Sửa chữa nước</span>
+            </a>
+            <a>
+                <img src="./img/BÚA ICON.png" alt="">
+                <span>Sửa chữa cầu thang</span>
+            </a>
+            <a>
+                <img src="./img/BÚA ICON.png" alt="">
+                <span>Sửa chữa sàn nhà</span>
+            </a>
+            <a>
+                <img src="./img/ICON XEM THÊM.png" alt="">
+            </a>
         </div>
     </div>
     <form class="d-flex my-2 my-lg-0 mx-auto">
@@ -29,7 +46,7 @@
                 <i class="fa-solid fa-chevron-down"></i>
                 <span>Tiếng việt</span>
             </a>
-            <div class="dropdown-menu dropdown-menu-start" aria-labelledby="ngonNgu">
+            <div class="dropdown-menu dropdown-menu-start ngonNgu-menu" aria-labelledby="ngonNgu">
                 <button class="dropdown-item text-capitalize" href="#">
                     <img class="language" src="./img/ICON NGÔN NGỮ.png" alt="">
                     Tiếng việt
@@ -41,13 +58,23 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="shoppingCart" data-bs-toggle="dropdown" aria-haspopup="true"
+            <a class="nav-link dropdown-toggle" id="shoppingCart" data-bs-toggle="dropdown" data-bs-auto-close="false"
                 aria-expanded="false">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
-            <div class="dropdown-menu dropdown-menu-start" aria-labelledby="shoppingCart">
-                <a class="dropdown-item" href="#">Action 1</a>
-                <a class="dropdown-item" href="#">Action 2</a>
+            <div class="dropdown-menu dropdown-menu-start shoppingCart-menu" aria-labelledby="shoppingCart">
+                <div class="dropdown-item">
+                    <div class="checkbox">
+                        <input class="check-input" type="checkbox" id="checkbox-1">
+                        <label class="check-label" for="checkbox-1"></label>
+                    </div>
+                    <img src="./img/BÚA ICON.png" alt="">
+                    <div class="content">
+                        <p>Sửa chữa bếp</p>
+                        <strong>500.000đ</strong>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
             </div>
         </li>
     </ul>

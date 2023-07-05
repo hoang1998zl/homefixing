@@ -98,6 +98,47 @@ header {
                     margin-left: 1rem;
                 }
             }
+
+            .dropdown-menu {
+                background-color: #e9e1df;
+                border-radius: 1rem;
+                padding: 1rem 0;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -10px;
+                    left: 1rem;
+                    border: solid transparent;
+                    border-width: 0 8px 10px 8px;
+                    border-color: transparent transparent #e9e1df transparent;
+                }
+
+                a {
+                    width: 100%;
+                    min-width: max-content;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    color: $color_primary;
+                    font-size: 2rem;
+                    padding: .5rem 2rem;
+                    cursor: pointer;
+
+                    img {
+                        height: 2.4rem;
+                        margin-right: 0.5rem;
+                    }
+
+                    span {
+                        flex: 1;
+                    }
+
+                    &:hover {
+                        background-color: $color_gray;
+                    }
+                }
+            }
         }
 
         form {
@@ -124,6 +165,7 @@ header {
                 border: none;
                 border-radius: 1rem;
                 padding: 0 1rem;
+                color: $color_white;
 
                 &::placeholder {
                     font-style: italic;
@@ -155,8 +197,6 @@ header {
 
             .dropdown {
                 .dropdown-toggle {
-                    position: relative;
-
                     &::after {
                         display: none;
                     }
@@ -166,17 +206,60 @@ header {
                     width: max-content;
                     position: absolute;
                     font-size: 2rem;
+                    background-color: #e9e1df;
+                    border-radius: 1rem;
+                    padding: 1rem 0;
 
-                    img {
-                        &.language {
-                            height: 2rem;
-                            margin-right: 0.5rem;
-                        }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: -10px;
+                        right: 1rem;
+                        border: solid transparent;
+                        border-width: 0 8px 10px 8px;
+                        border-color: transparent transparent #e9e1df transparent;
                     }
 
                     &.dropdown-menu-start {
                         right: 0;
                         left: unset;
+                    }
+
+                    &.ngonNgu-menu {
+                        img {
+                            height: 2rem;
+                            margin-right: 0.5rem;
+                        }
+
+                        .dropdown-item {
+                            &:hover {
+                                background-color: $color_gray;
+                            }
+                        }
+                    }
+
+                    &.shoppingCart-menu {
+                        width: max-content;
+
+                        .dropdown-item {
+                            display: grid;
+                            grid-template-columns: 3rem 2rem auto;
+                            grid-gap: 1rem;
+
+                            .checkbox {
+                                .check-input {
+                                    display: none;
+                                }
+
+                                .check-label {
+                                    width: 2.4rem;
+                                    height: 2.4rem;
+                                    border: 1px solid $color_orange;
+                                    border-radius: 0.5rem;
+                                    display: block;
+                                }
+                            }
+                        }
                     }
                 }
             }
