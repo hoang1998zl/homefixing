@@ -58,15 +58,17 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="shoppingCart" data-bs-toggle="dropdown" data-bs-auto-close="false"
+            <a class="nav-link dropdown-toggle" id="shoppingCart" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                 aria-expanded="false">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-start shoppingCart-menu" aria-labelledby="shoppingCart">
-                <div class="dropdown-item">
+                <div class="dropdown-items">
                     <div class="checkbox">
-                        <input class="check-input" type="checkbox" id="checkbox-1">
-                        <label class="check-label" for="checkbox-1"></label>
+                        <input class="check-input" type="checkbox" id="checkbox-1" checked="true">
+                        <label class="check-label" for="checkbox-1">
+                            <img src="./img/CHỌN NGÔN NGỮ ICON.png" alt="">
+                        </label>
                     </div>
                     <img src="./img/BÚA ICON.png" alt="">
                     <div class="content">
@@ -74,7 +76,38 @@
                         <strong>500.000đ</strong>
                     </div>
                 </div>
+                <div class="dropdown-items">
+                    <div class="checkbox">
+                        <input class="check-input" type="checkbox" id="checkbox-2" checked="true">
+                        <label class="check-label" for="checkbox-2">
+                            <img src="./img/CHỌN NGÔN NGỮ ICON.png" alt="">
+                        </label>
+                    </div>
+                    <img src="./img/BÚA ICON.png" alt="">
+                    <div class="content">
+                        <p>Sửa chữa cửa sổ</p>
+                        <strong>500.000đ</strong>
+                    </div>
+                </div>
                 <div class="dropdown-divider"></div>
+                <div class="dropdown-items dropdown--items">
+                    <div class="checkbox">
+                        <input class="check-input" type="checkbox" id="checkbox-3" checked="true">
+                        <label class="check-label" for="checkbox-3">
+                            <img src="./img/CHỌN NGÔN NGỮ ICON.png" alt="">
+                        </label>
+                    </div>
+                    <p>Tất cả:</p>
+                    <span class="color_orange fw-bold text-end">1.000.000đ</span>
+                </div>
+                <div class="w-100 d-flex align-items-center">
+                    <button>
+                        <img src="./img/BACK ICON.png" alt="">
+                    </button>
+                    <div class="content">
+                        <strong>Đặt dịch vụ</strong>
+                    </div>
+                </div>
             </div>
         </li>
     </ul>

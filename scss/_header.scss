@@ -205,7 +205,7 @@ header {
                 .dropdown-menu {
                     width: max-content;
                     position: absolute;
-                    font-size: 2rem;
+                    font-size: 1.6rem;
                     background-color: #e9e1df;
                     border-radius: 1rem;
                     padding: 1rem 0;
@@ -241,22 +241,71 @@ header {
                     &.shoppingCart-menu {
                         width: max-content;
 
-                        .dropdown-item {
+                        .dropdown-items {
+                            padding: 0.5rem 1rem;
                             display: grid;
                             grid-template-columns: 3rem 2rem auto;
                             grid-gap: 1rem;
 
-                            .checkbox {
-                                .check-input {
+                            &.dropdown--items {
+                                grid-template-columns: 3rem auto auto;
+                                grid-gap: 1rem;
+                            }
+                        }
+
+                        .checkbox {
+                            .check-input {
+                                display: none;
+                            }
+
+                            .check-label {
+                                width: 2.4rem;
+                                height: 2.4rem;
+                                border: 1px solid $color_orange;
+                                border-radius: 0.5rem;
+                                display: block;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                img {
                                     display: none;
                                 }
+                            }
 
-                                .check-label {
-                                    width: 2.4rem;
-                                    height: 2.4rem;
-                                    border: 1px solid $color_orange;
-                                    border-radius: 0.5rem;
+                            .check-input:checked~.check-label {
+                                img {
                                     display: block;
+                                }
+                            }
+                        }
+
+                        .content {
+                            font-size: 1.6rem;
+
+                            strong {
+                                width: max-content;
+                                display: block;
+                                border-radius: 5rem;
+                                padding: 0.3rem 2rem;
+                                background-color: $color_orange;
+                                text-align: center;
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        .w-100.d-flex {
+                            padding: 0.5rem 1rem;
+                            display: grid;
+                            grid-template-columns: 3rem auto;
+                            grid-gap: 1rem;
+
+                            button {
+                                background-color: transparent;
+                                border: none;
+
+                                img {
+                                    width: 3rem;
                                 }
                             }
                         }

@@ -267,7 +267,7 @@ header .navbar form .ungDung-button:hover {
   width: -moz-max-content;
   width: max-content;
   position: absolute;
-  font-size: 2rem;
+  font-size: 1.6rem;
   background-color: #e9e1df;
   border-radius: 1rem;
   padding: 1rem 0;
@@ -296,20 +296,60 @@ header .navbar form .ungDung-button:hover {
   width: -moz-max-content;
   width: max-content;
 }
-.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .dropdown-item {
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .dropdown-items {
+  padding: 0.5rem 1rem;
   display: grid;
   grid-template-columns: 3rem 2rem auto;
   grid-gap: 1rem;
 }
-.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .dropdown-item .checkbox .check-input {
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .dropdown-items.dropdown--items {
+  grid-template-columns: 3rem auto auto;
+  grid-gap: 1rem;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .checkbox .check-input {
   display: none;
 }
-.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .dropdown-item .checkbox .check-label {
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .checkbox .check-label {
   width: 2.4rem;
   height: 2.4rem;
   border: 1px solid #eda018;
   border-radius: 0.5rem;
   display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .checkbox .check-label img {
+  display: none;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .checkbox .check-input:checked ~ .check-label img {
+  display: block;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .content {
+  font-size: 1.6rem;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .content strong {
+  width: -moz-max-content;
+  width: max-content;
+  display: block;
+  border-radius: 5rem;
+  padding: 0.3rem 2rem;
+  background-color: #eda018;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .w-100.d-flex {
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 3rem auto;
+  grid-gap: 1rem;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .w-100.d-flex button {
+  background-color: transparent;
+  border: none;
+}
+.menu .navbar .navbar-nav .dropdown .dropdown-menu.shoppingCart-menu .w-100.d-flex button img {
+  width: 3rem;
 }
 
 #footer {
