@@ -48,11 +48,13 @@ input:focus {
 }
 input::-moz-placeholder, input:hover::-moz-placeholder, input:focus::-moz-placeholder {
   color: #99b0bc;
+  font-style: italic;
 }
 input::placeholder,
 input:hover::placeholder,
 input:focus::placeholder {
   color: #99b0bc;
+  font-style: italic;
 }
 
 img {
@@ -64,9 +66,11 @@ textarea {
 }
 textarea::-moz-placeholder {
   color: #99b0bc;
+  font-style: italic;
 }
 textarea::placeholder {
   color: #99b0bc;
+  font-style: italic;
 }
 
 .color_orange {
@@ -805,6 +809,7 @@ main .form-datLich .form .icon-datLich input {
   bottom: 0;
   border: none;
   background-color: transparent;
+  color: transparent;
 }
 main .form-datLich .form .button {
   width: -moz-max-content;
@@ -814,5 +819,205 @@ main .form-datLich .form .button {
   background-color: #eda018;
   border-radius: 5rem;
   padding: 0.5rem 2rem;
+  margin: 1rem;
+}
+main .news {
+  padding: 2rem 6rem;
+}
+main .news .card {
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 1px solid #313131;
+}
+main .news .card .card-img-top {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+main .news .card .card-title {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #313131;
+}
+main .news .card .card-time {
+  color: #99b0bc;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+main .news .card .card-content {
+  height: 6rem;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  -moz-line-clamp: 3;
+  color: #313131;
+}
+main .news .card:hover {
+  border: 1px solid #eda018;
+}
+main .news .card:hover .card-title {
+  color: #eda018;
+  transition: color 0.7s;
+}
+main .news-detail {
+  padding: 2rem 6rem;
+  font-size: 1.6rem;
+  color: #313131;
+}
+main .news-detail-head {
+  font-weight: bold;
+  font-size: 3rem;
+}
+main .news-detail-time {
+  font-weight: bold;
+  color: #eda018;
+}
+main .news-detail-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+main .news-detail-shortContent {
+  font-weight: bold;
+}
+main .news-detail-img {
+  width: 86%;
+  display: block;
+  margin: 1rem auto;
+}
+main .news-detail-imgContent {
+  font-weight: bold;
+  color: #eda018;
+  text-align: center;
+}
+main .news-detail-writeBy {
+  margin: 2rem 0;
+  font-style: italic;
+  font-weight: bold;
+  text-align: right;
+  color: #eda018;
+}
+main .news-carousel {
+  padding: 2rem 6rem;
+}
+main .news-carousel .card {
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 1px solid #313131;
+}
+main .news-carousel .card .card-img-top {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+main .news-carousel .card .card-title {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #313131;
+}
+main .news-carousel .card .card-time {
+  color: #99b0bc;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+main .news-carousel .card .card-content {
+  height: 6rem;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  -moz-line-clamp: 3;
+  color: #313131;
+}
+main .news-carousel .card:hover {
+  border: 1px solid #eda018;
+}
+main .news-carousel .card:hover .card-title {
+  color: #eda018;
+  transition: color 0.7s;
+}
+main .contact {
+  width: 100%;
+  padding: 2rem 6rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-gap: 2rem;
+  justify-content: space-between;
+}
+main .contact .contact-wrapper {
+  position: relative;
+}
+main .contact .contact-wrapper.contact-left {
+  margin-top: -12rem;
+}
+main .contact .contact-wrapper.contact-left .title {
+  font-size: 3rem;
+}
+main .contact .contact-wrapper.contact-left p {
+  font-size: 2rem;
+}
+main .contact .contact-wrapper.contact-left p a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #313131;
+  color: #eda018;
+  font-weight: bold;
+}
+main .contact .contact-wrapper.contact-left p a img {
+  height: 2.4rem;
+}
+main .contact .contact-wrapper.contact-right .contact-form {
+  width: 100%;
+}
+main .contact .contact-wrapper.contact-right .contact-form .form-row {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 20rem auto;
+  grid-gap: 2rem 1rem;
+}
+main .contact .contact-wrapper.contact-right .contact-form .form-row .form-label {
+  padding-top: 0.3rem;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: right;
+}
+main .contact .contact-wrapper.contact-right .contact-form .form-row .form-label span {
+  color: #eda018;
+}
+main .contact .contact-wrapper.contact-right .contact-form .form-row .form-input,
+main .contact .contact-wrapper.contact-right .contact-form .form-row .form-textarea {
+  flex: 1;
+  width: 100%;
+  min-width: none;
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  border: 2px solid #eda018;
+}
+main .contact .contact-wrapper.contact-right .contact-form .form-row .form-textarea {
+  height: 12rem;
+}
+main .contact .contact-wrapper.contact-right .contact-form .button {
+  color: #313131;
+  background-color: #eda018;
+  padding: 0.5rem 4rem;
+  border: none;
+  border-radius: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
   margin: 1rem;
 }

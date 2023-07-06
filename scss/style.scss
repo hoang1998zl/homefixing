@@ -60,6 +60,7 @@ input:focus {
 
     &::placeholder {
         color: $color_gray;
+        font-style: italic;
     }
 }
 
@@ -72,6 +73,7 @@ textarea {
 
     &::placeholder {
         color: $color_gray;
+        font-style: italic;
     }
 }
 

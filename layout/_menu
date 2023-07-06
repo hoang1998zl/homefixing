@@ -67,7 +67,7 @@
                     <div class="checkbox">
                         <input class="check-input" type="checkbox" id="checkbox-1" checked="true">
                         <label class="check-label" for="checkbox-1">
-                            <img src="./img/CHỌN NGÔN NGỮ ICON.png" alt="">
+                            <img src="./img/ICON HÌNH DỊCH VỤ.png" alt="">
                         </label>
                     </div>
                     <img src="./img/BÚA ICON.png" alt="">
@@ -80,7 +80,7 @@
                     <div class="checkbox">
                         <input class="check-input" type="checkbox" id="checkbox-2" checked="true">
                         <label class="check-label" for="checkbox-2">
-                            <img src="./img/CHỌN NGÔN NGỮ ICON.png" alt="">
+                            <img src="./img/ICON HÌNH DỊCH VỤ.png" alt="">
                         </label>
                     </div>
                     <img src="./img/BÚA ICON.png" alt="">
@@ -94,7 +94,7 @@
                     <div class="checkbox">
                         <input class="check-input" type="checkbox" id="checkbox-3" checked="true">
                         <label class="check-label" for="checkbox-3">
-                            <img src="./img/CHỌN NGÔN NGỮ ICON.png" alt="">
+                            <img src="./img/ICON HÌNH DỊCH VỤ.png" alt="">
                         </label>
                     </div>
                     <p>Tất cả:</p>
