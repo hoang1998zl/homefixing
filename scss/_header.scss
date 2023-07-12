@@ -10,6 +10,13 @@ header {
     display: flex;
     align-items: center;
 
+    &.header-top {
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
     .navbar {
         width: 100%;
         height: 100%;
@@ -313,6 +320,78 @@ header {
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:541px) and (max-width:1023px) {
+    header {
+        height: $header_height;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        padding: 0 $default_paddingX;
+        display: flex;
+        align-items: center;
+
+        .navbar {
+            width: 100%;
+            height: 100%;
+
+            .navbar-brand {
+                height: $header_height;
+                padding: 15px 0;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                    object-fit: contain;
+                }
+            }
+
+            .navbar-toggler{
+                color: $color_orange;
+            }
+
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            color: $color_white;
+                            font-weight: bold;
+                            font-size: 2rem;
+                            text-transform: capitalize;
+                            padding: 0 2rem;
+
+                            &:hover,
+                            &.active {
+                                color: $color_orange;
+                            }
+                        }
+                    }
+                }
+            }
+
+            form {
+                .ungDung-button {
+                    background-color: transparent;
+                    color: $color_orange;
+                    border: 1px solid $color_white;
+                    border-radius: 5rem;
+                    padding: 0.5rem $default_paddingX;
+                    font-weight: bold;
+                    font-size: 2rem;
+
+                    &:hover {
+                        background-color: $color_orange;
+                        color: $color_white;
+                        border-color: $color_orange;
                     }
                 }
             }
