@@ -41,3 +41,34 @@
         }
     }
 }
+
+@media (max-width:1023px) {
+    #footer {
+        flex-direction: column;
+
+        .wrapper {
+            width: 100%;
+            justify-content: center;
+        }
+
+        ul {
+            width: 100%;
+
+            li {
+                a {
+                    align-items: flex-start;
+                }
+
+                i {
+                    margin-right: 0.5rem;
+                    padding-top: 0.3rem;
+                }
+
+                span {
+                    flex: 1;
+                }
+            }
+        }
+
+    }
+}

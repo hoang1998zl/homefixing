@@ -376,4 +376,259 @@ header {
             }
         }
     }
+
+    .menu {
+        .navbar {
+            height: 100%;
+            align-items: center;
+            font-size: 1.4rem;
+
+            .danhMuc-button {
+                .dropdown-toggle {
+                    color: $color_white;
+                    background-color: transparent;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &::after {
+                        display: none;
+                    }
+
+                    i {
+                        color: $color_orange;
+                        font-size: 3rem;
+                    }
+
+                    strong {
+                        margin-left: 1rem;
+                        display: none;
+                    }
+                }
+
+                .dropdown-menu {
+                    background-color: #e9e1df;
+                    border-radius: 1rem;
+                    padding: 1rem 0;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: -10px;
+                        left: 1rem;
+                        border: solid transparent;
+                        border-width: 0 8px 10px 8px;
+                        border-color: transparent transparent #e9e1df transparent;
+                    }
+
+                    a {
+                        width: 100%;
+                        min-width: max-content;
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+                        color: $color_primary;
+                        font-size: 2rem;
+                        padding: .5rem 2rem;
+                        cursor: pointer;
+
+                        img {
+                            height: 2.4rem;
+                            margin-right: 0.5rem;
+                        }
+
+                        span {
+                            flex: 1;
+                        }
+
+                        &:hover {
+                            background-color: $color_gray;
+                        }
+                    }
+                }
+            }
+
+            form {
+                display: none !important;
+                width: 20vw;
+                height: 45px;
+                border: 1px solid $color_orange;
+                border-radius: 1rem;
+
+                button[type=submit] {
+                    background-color: transparent;
+                    border: none;
+                    color: $color_orange;
+                    padding: 0 1rem;
+                    border-radius: 1rem;
+
+                    i {
+                        transform: rotateY(180deg);
+                        font-size: 2.4rem;
+                    }
+                }
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 1rem;
+                    padding: 0 1rem;
+                    color: $color_white;
+
+                    &::placeholder {
+                        font-style: italic;
+                        color: $color_white;
+                    }
+                }
+            }
+
+            .navbar-nav {
+                flex-direction: row;
+                gap: 3rem;
+
+                .nav-item {
+                    align-items: center;
+                    display: flex;
+
+                    .nav-link {
+                        color: $color_white;
+                        text-transform: capitalize;
+                        cursor: pointer;
+
+                        i {
+                            color: $color_orange;
+                            margin-right: 0.5rem;
+
+                            &.fa-cart-shopping {
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                }
+
+                .dropdown {
+                    .dropdown-toggle {
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    .dropdown-menu {
+                        width: max-content;
+                        position: absolute;
+                        font-size: 1.6rem;
+                        background-color: #e9e1df;
+                        border-radius: 1rem;
+                        padding: 1rem 0;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -10px;
+                            right: 1rem;
+                            border: solid transparent;
+                            border-width: 0 8px 10px 8px;
+                            border-color: transparent transparent #e9e1df transparent;
+                        }
+
+                        &.dropdown-menu-start {
+                            right: 0;
+                            left: unset;
+                        }
+
+                        &.ngonNgu-menu {
+                            img {
+                                height: 2rem;
+                                margin-right: 0.5rem;
+                            }
+
+                            .dropdown-item {
+                                &:hover {
+                                    background-color: $color_gray;
+                                }
+                            }
+                        }
+
+                        &.shoppingCart-menu {
+                            width: max-content;
+
+                            a {
+                                color: $color_primary;
+                            }
+
+                            .dropdown-items {
+                                padding: 0.5rem 1rem;
+                                display: grid;
+                                grid-template-columns: 3rem 2rem auto;
+                                grid-gap: 1rem;
+
+                                &.dropdown--items {
+                                    grid-template-columns: 3rem auto auto;
+                                    grid-gap: 1rem;
+                                }
+                            }
+
+                            .checkbox {
+                                .check-input {
+                                    display: none;
+                                }
+
+                                .check-label {
+                                    width: 2.4rem;
+                                    height: 2.4rem;
+                                    border: 1px solid $color_orange;
+                                    border-radius: 0.5rem;
+                                    display: block;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    img {
+                                        display: none;
+                                    }
+                                }
+
+                                .check-input:checked~.check-label {
+                                    img {
+                                        display: block;
+                                    }
+                                }
+                            }
+
+                            .content {
+                                font-size: 1.6rem;
+
+                                strong {
+                                    width: max-content;
+                                    display: block;
+                                    border-radius: 5rem;
+                                    padding: 0.3rem 2rem;
+                                    background-color: $color_orange;
+                                    text-align: center;
+                                    font-size: 1.4rem;
+                                }
+                            }
+
+                            .w-100.d-flex {
+                                padding: 0.5rem 1rem;
+                                display: grid;
+                                grid-template-columns: 3rem auto;
+                                grid-gap: 1rem;
+
+                                button {
+                                    background-color: transparent;
+                                    border: none;
+
+                                    img {
+                                        width: 3rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

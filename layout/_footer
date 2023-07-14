@@ -1,6 +1,6 @@
 <div class="wrapper">
     <img class="d-block mx-auto" src="./img/LOGO.png" alt="" style="height: 4.5rem;">
-    <p>
+    <p class="text-center text-lg-start">
         Công Ty TNHH Xây Dựng Thương Mại Dũng Tuấn
     </p>
 </div>
