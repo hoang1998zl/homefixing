@@ -44,8 +44,6 @@
 
 @media (max-width:1023px) {
     #footer {
-        flex-direction: column;
-
         .wrapper {
             width: 100%;
             justify-content: center;
@@ -70,5 +68,11 @@
             }
         }
 
+    }
+}
+
+@media (max-width:540px) {
+    #footer {
+        flex-direction: column;
     }
 }

@@ -840,6 +840,45 @@ main {
             }
         }
 
+        .news {
+            padding: 2rem;
+
+            .card {
+                border-radius: 1rem;
+
+                .card-img-top {
+                    height: 30vw;
+                }
+
+                .card-title {
+                    font-size: 2rem;
+                }
+
+                .card-time {
+                    font-size: 1.4rem;
+                }
+
+                .card-content {
+                    height: calc(2.1rem * 3);
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .news-detail {
+            padding: 2rem calc($default_paddingX);
+            font-size: 1.4rem;
+
+            &-head {
+                font-size: 2rem;
+            }
+
+            &-title {
+                font-weight: bold;
+                font-size: 1.6rem;
+            }
+        }
+
         .contact {
             width: 100%;
             padding: 2rem;
