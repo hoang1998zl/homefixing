@@ -671,3 +671,94 @@ main {
         }
     }
 }
+
+@media (max-width:1023px) {
+    main {
+        .index-aboutUs {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 2rem;
+
+            .img-wrapper {
+                width: 50%;
+                margin: 0 auto;
+                margin-top: -12rem;
+
+                img {
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        .whyChooseUs {
+            .title {
+                .col-12.col-lg-6 {
+                    width: max-content;
+                    margin: 0 auto;
+                }
+            }
+
+            .whyChooseUs-wrapper {
+                padding: 0 0 0 0;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .img-wrapper {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+
+                .whyChooseUs-content {
+                    margin-left: 6rem;
+
+                    ul {
+                        li {
+                            h2 {
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .index-service {
+            .index-service-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+
+                .service-wrapper {
+                    width: 20rem;
+
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                .xemThem-btn {
+                    flex: unset;
+                    min-width: 50%;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .mobileApp {
+            .mobileApp-wrapper {
+                background-position: top;
+                background-size: contain;
+            }
+    
+            .mobileApp-content {
+                img {
+                    width: 65%;
+                    margin-bottom: 2rem;
+                }
+                a {
+                    margin: 0 1rem;
+                }
+            }
+        }
+    }
+}

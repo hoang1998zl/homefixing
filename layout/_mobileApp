@@ -58,7 +58,7 @@
                                     </li>
                                 </ul>
 
-                                <div class="w-100 my-5 d-flex justify-content-around align-items-center">
+                                <div class="w-100 my-5 d-flex justify-content-center justify-content-lg-around align-items-center">
                                     <a href="#">
                                         Tải về
                                     </a>

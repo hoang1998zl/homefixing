@@ -64,3 +64,33 @@
         }
     }
 }
+
+@media (max-width:1023px) {
+    .banner {
+        .carousel {
+            .carousel-indicators {
+                margin: 2rem auto;
+            }
+    
+            .carousel-inner {
+                img {
+                    height: calc(50vh - 4rem);
+                }
+    
+                .carousel-caption {
+                    h3 {
+                        font-size: calc(2rem + 1vw);
+                    }
+    
+                    P {
+                        font-size: calc(1rem + 0.5vw);
+                    }
+    
+                    .khamPha-button {
+                        font-size: calc(1rem + 0.5vw);
+                    }
+                }
+            }
+        }
+    }
+}
